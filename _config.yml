@@ -51,8 +51,13 @@ subnav:
   #SegmentFault: ""
   #博客园: "cnblogs"
   #CSDN: ""
+  #Coding: ""
   #网易云音乐: "netease"
   #虾米音乐: "xiami"
+  #bilibili: ""
+  #AcFun: ""
+  #niconico: ""
+  #Quora: ""
   #Facebook: "#"
   #Google: "#"
   #Twitter: "#"
@@ -64,6 +69,7 @@ subnav:
   #CodePen: ""
   #Plunker: ""
   #Instagram: "#"
+  #LOFTER: ""
   #Flickr: "#"
   #reddit: ""
   #Medium: ""
@@ -78,6 +84,10 @@ subnav:
 preload_comment: true
 ## false: 当点击评论条等区域时再加载评论模块
 ## false: load comment's section until u click/hover on the bar/icon
+
+show_count: false
+## 是否在主页文章标题旁显示评论数（多说、Disqus）
+## Add comment count after article title
 
 disqus: 
   #on: true
@@ -144,11 +154,11 @@ left_col_width: 300
 copyright: true
 
 # Table of contents | 文章目录
-toc: true
-
-# 目录中标题不换行
-# Keep TOC title on the same line | 
-toc_nowrap: false
+toc:
+  on: true
+  list_number: true # 目录序号
+  max_depth: 3  # 1 - 6 (h1-h6) 目录最大级数
+  nowrap: false # Keep title on same line | 目录标题不换行
 
 # 是否开启主页及加载头像时的动画效果
 # Animation in Homepage and Loading avatar
@@ -157,6 +167,11 @@ animate: true
 # Load jQuery UI to style tooltips
 # 工具提示框样式美化
 jquery_ui: false
+
+# Max width of right cloumn | 限制右侧内容的宽带 
+limit_article_width: 
+  on: false
+  max_width: 60 # em
 
 # >>> Small features | 小功能设置 <<<
 
@@ -175,9 +190,21 @@ friends:
 aboutme: 专注于前端
 #aboutme: false
 
-# 是否在新窗口打开链接
-# Open ALL link in a new tab
-open_in_new: false
+# Open link in a new tab | 是否在新窗口打开链接
+## `global` 0: Set separately, 1: Open all in new 2: Open all in current
+## `global` 0: 分开设置, 1: 全部在新标签打开, 2: 全部在"当前"标签打开
+open_in_new:
+  global: 0 # 0-2
+  title: false # article title in homepage 主页文章标题
+  post: false # link within post/page 正文中的链接
+  tags: false # 标签
+  categories: false # 分类
+  article_nav: false # 导航
+  archives: true # 归档
+  mini_archives: true # 迷你归档
+  menu: false # 边栏菜单
+  friends: true  # 友情链接
+  socail: true # 社交图标
 
 # Customize feed link 自定义订阅地址
 rss: /atom.xml
@@ -189,6 +216,12 @@ ie_updater:
   link: //outdatedbrowser.com/
   ## http://browsehappy.com/
   ## http://outdatedbrowser.com/
+
+# Tab Title Change | 标签页标题切换
+tab_title_change: 
+  on: false
+  left_tab_title: '(つェ⊂) 我藏好了哦~ '
+  return_tab_title: '(*´∇｀*) 被你发现啦~ '
 
 
 # >>> Vendors | 第三方工具 & 服务 <<<
