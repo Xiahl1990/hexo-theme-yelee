@@ -128,8 +128,8 @@ color_scheme: yilia
 
 highlight_style:
   on: true
-  inline_code: 1  # Value: 0 - 9 可选
-  code_block: 1  # Value: 0 - 4
+  inline_code: 2  # Value: 0 - 9 可选
+  code_block: 2  # Value: 0 - 4
   # Set inline_code to style highlight text
   # Chose a highlight theme for code block
   # 通过 inline_code 切换内置文本高亮样式
@@ -184,7 +184,7 @@ friends:
   Hexo: https://hexo.io
 
 #是否开启“关于我”。
-aboutme: 专注于前端
+aboutme: 做个JS全栈人才，分享生活的点滴
 
 # Open link in a new tab | 是否在新窗口打开链接
 ## `global` 0: Set separately, 1: Open all in new 2: Open all in current
