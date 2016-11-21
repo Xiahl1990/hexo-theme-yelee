@@ -17,7 +17,7 @@ menu:
 avatar: /img/xiahl.jpg
 
 # Small icon of Your site | 站点小图标地址
-favicon: /favicon.png
+favicon: /favicon.ico
 
 # Internationalization | 主题语言
 ## Change Language in SITE's _config.yml | 在站点配置中切换语言
@@ -85,7 +85,7 @@ preload_comment: true
 ## false: 当点击评论条等区域时再加载评论模块
 ## false: load comment's section until u click/hover on the bar/icon
 
-show_count: false
+show_count: true
 ## 是否在主页文章标题旁显示评论数（多说、Disqus）
 ## Add comment count after article title
 
@@ -215,7 +215,7 @@ ie_updater:
 
 # Tab Title Change | 标签页标题切换
 tab_title_change:
-  on: false
+  on: true
   left_tab_title: '(つェ⊂) 我藏好了哦~ '
   return_tab_title: '(*´∇｀*) 被你发现啦~ '
 
@@ -237,7 +237,7 @@ fancybox: true
 
 # Display Math(LaTeX, MathML...) | 数学公式支持
 ## https://www.mathjax.org/
-mathjax: false
+mathjax: true
 
 # Socail Share | 是否开启分享
 share:
@@ -250,7 +250,7 @@ share:
 
 # 百度、谷歌站长验证。填写 HTML 标签 content
 # Site Verification for Google and Baidu. HTML label content.
-baidu_site:
+baidu_site: "yARKbTPBxV"
 google_site:
 
 # Fill in Google Analytics tracking ID, #e.g. UA-XXXXX-X
@@ -258,7 +258,7 @@ google_analytics:
 
 # 百度统计 http://sitecenter.baidu.com/sc-web/
 # 查看代码，填入 //hm.baidu.com/hm.js? 之后的内容
-baidu_tongji:
+baidu_tongji: "861433d3c11db4e7be191ac237bd45d5"
 
 # 不蒜子网站计数设置
 # http://ibruce.info/2015/04/04/busuanzi/
